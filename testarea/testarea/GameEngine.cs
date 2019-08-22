@@ -120,6 +120,7 @@ namespace testarea
                                     
                                 }
                             }
+                            Console.WriteLine("Så er det spillernr {0:D} tur", player[tal].playerNr);
                             moveN(tal, dTal, pieces);
                             break;
                         }
@@ -127,7 +128,7 @@ namespace testarea
                     }
                 } else 
                 {
-
+                    Console.WriteLine("Så er det spillernr {0:D} tur", player[tal].playerNr);
                     moveN(tal, dTal, pieces);
 
 
@@ -138,10 +139,10 @@ namespace testarea
 
 
                 }
-
+                
                 plColor = playerNext(plColor);
                 tal = Convert.ToInt32(plColor);
-
+                Console.WriteLine("Så er det spillernr {0:D} tur", player[tal].playerNr);
             }
             
 
@@ -154,6 +155,7 @@ namespace testarea
             Control ctrl = new Control();
 
             Console.WriteLine("");
+            Console.WriteLine("Så er det spillernr {0:D} tur", player[tal].playerNr);
             Console.WriteLine("Du har nu mindst en ude og kan rulle for at rykke en brik ");
 
 
@@ -187,6 +189,32 @@ namespace testarea
 
 
             }
+        }
+
+        public bool mayBootOut(int where, PlayPiece[] pieces, string brik)
+        {
+            string firstPart = brik.Substring(0, 1);
+
+            foreach (PlayPiece p in pieces)
+            {
+                if (firstPart != p.brikNr.Substring(0, 1))
+                {
+                    if (where == p.locationBoard)
+                    {
+                        return true;
+                        break;
+                    } else
+                    {
+                        false;
+                    }
+                }
+            }
+
+
+
+
+
+            
         }
 
         public LudoHelper.color playerNext(LudoHelper.color color)
