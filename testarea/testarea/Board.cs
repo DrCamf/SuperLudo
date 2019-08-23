@@ -222,17 +222,17 @@ namespace testarea
                new LudoBoardField(new Point(6, 0), LudoHelper.type.normal));
             ludoBoard.Add(new Point(7, 0),
                new LudoBoardField(new Point(7, 0), LudoHelper.type.star));
-            //ludoBoard.Add(new Point(7, 1),
+            //ludoBoardFeld.Add(new Point(7, 1),
             //   new LudoBoardField(new Point(7, 1), "yellowzone"));
-            //ludoBoard.Add(new Point(7, 2),
+            //ludoBoardFeld.Add(new Point(7, 2),
             //   new LudoBoardField(new Point(7, 2), "yellowzone"));
-            //ludoBoard.Add(new Point(7, 3),
+            //ludoBoardFeld.Add(new Point(7, 3),
             //   new LudoBoardField(new Point(7, 3), "yellowzone"));
-            //ludoBoard.Add(new Point(7, 4),
+            //ludoBoardFeld.Add(new Point(7, 4),
             //   new LudoBoardField(new Point(7, 4), "yellowzone"));
-            //ludoBoard.Add(new Point(7, 5),
+            //ludoBoardFeld.Add(new Point(7, 5),
             //   new LudoBoardField(new Point(7, 5), "yellowzone"));
-            //ludoBoard.Add(new Point(7, 6),
+            //ludoBoardFeld.Add(new Point(7, 6),
             //   new LudoBoardField(new Point(7, 6), "yellowgoal"));
             ludoBoard.Add(new Point(8, 0),
                new LudoBoardField(new Point(8, 0), LudoHelper.type.normal));
@@ -260,17 +260,17 @@ namespace testarea
                new LudoBoardField(new Point(14, 6), LudoHelper.type.normal));
             ludoBoard.Add(new Point(14, 7),
                new LudoBoardField(new Point(14, 7), LudoHelper.type.star));
-            //ludoBoard.Add(new Point(13, 7),
+            //ludoBoardFeld.Add(new Point(13, 7),
             //   new LudoBoardField(new Point(13, 7), "bluezone"));
-            //ludoBoard.Add(new Point(12, 7),
+            //ludoBoardFeld.Add(new Point(12, 7),
             //   new LudoBoardField(new Point(12, 7), "bluezone"));
-            //ludoBoard.Add(new Point(11, 7),
+            //ludoBoardFeld.Add(new Point(11, 7),
             //   new LudoBoardField(new Point(11, 7), "bluezone"));
-            //ludoBoard.Add(new Point(10, 7),
+            //ludoBoardFeld.Add(new Point(10, 7),
             //   new LudoBoardField(new Point(10, 7), "bluezone"));
-            //ludoBoard.Add(new Point(9, 7),
+            //ludoBoardFeld.Add(new Point(9, 7),
             //   new LudoBoardField(new Point(9, 7), "bluezone"));
-            //ludoBoard.Add(new Point(8, 7),
+            //ludoBoardFeld.Add(new Point(8, 7),
             //   new LudoBoardField(new Point(8, 7), "bluegoal"));
             ludoBoard.Add(new Point(14, 8),
                new LudoBoardField(new Point(14, 8), LudoHelper.type.normal));
@@ -298,17 +298,17 @@ namespace testarea
                new LudoBoardField(new Point(8, 14), LudoHelper.type.normal));
             ludoBoard.Add(new Point(7, 14),
                new LudoBoardField(new Point(7, 14), LudoHelper.type.star));
-            //ludoBoard.Add(new Point(7, 13),
+            //ludoBoardFeld.Add(new Point(7, 13),
             //   new LudoBoardField(new Point(7, 13), "redzone"));
-            //ludoBoard.Add(new Point(7, 12),
+            //ludoBoardFeld.Add(new Point(7, 12),
             //   new LudoBoardField(new Point(7, 12), "redzone"));
-            //ludoBoard.Add(new Point(7, 11),
+            //ludoBoardFeld.Add(new Point(7, 11),
             //   new LudoBoardField(new Point(7, 11), "redzone"));
-            //ludoBoard.Add(new Point(7, 10),
+            //ludoBoardFeld.Add(new Point(7, 10),
             //   new LudoBoardField(new Point(7, 10), "redzone"));
-            //ludoBoard.Add(new Point(7, 9),
+            //ludoBoardFeld.Add(new Point(7, 9),
             //   new LudoBoardField(new Point(7, 9), "redzone"));
-            //ludoBoard.Add(new Point(7, 8),
+            //ludoBoardFeld.Add(new Point(7, 8),
             //   new LudoBoardField(new Point(7, 8), "redgoal"));
             ludoBoard.Add(new Point(6, 14),
                new LudoBoardField(new Point(7, 8), LudoHelper.type.normal));
@@ -336,17 +336,17 @@ namespace testarea
              new LudoBoardField(new Point(0, 8), LudoHelper.type.normal));
             ludoBoard.Add(new Point(0, 7),
              new LudoBoardField(new Point(0, 7), LudoHelper.type.star));
-            //ludoBoard.Add(new Point(1, 7),
+            //ludoBoardFeld.Add(new Point(1, 7),
             // new LudoBoardField(new Point(1, 7), "greenzone"));
-            //ludoBoard.Add(new Point(2, 7),
+            //ludoBoardFeld.Add(new Point(2, 7),
             // new LudoBoardField(new Point(2, 7), "greenzone"));
-            //ludoBoard.Add(new Point(3, 7),
+            //ludoBoardFeld.Add(new Point(3, 7),
             // new LudoBoardField(new Point(3, 7), "greenzone"));
-            //ludoBoard.Add(new Point(4, 7),
+            //ludoBoardFeld.Add(new Point(4, 7),
             // new LudoBoardField(new Point(4, 7), "greenzone"));
-            //ludoBoard.Add(new Point(5, 7),
+            //ludoBoardFeld.Add(new Point(5, 7),
             // new LudoBoardField(new Point(5, 7), "greenzone"));
-            //ludoBoard.Add(new Point(6, 7),
+            //ludoBoardFeld.Add(new Point(6, 7),
             // new LudoBoardField(new Point(6, 7), "greengoal"));
 
             return ludoBoard;
@@ -384,29 +384,29 @@ namespace testarea
             return pPiece;
         }
 
-        public bool mayMoveIntoZone(Point brikP, string color)
-        {
-            bool mayMoveIntoGoalZone = false;
+        //public bool mayMoveIntoZone(Point brikP, string color)
+        //{
+        //    bool mayMoveIntoGoalZone = false;
 
-            if (brikP == new Point(7, 0) && color == "g")
-            {
-                mayMoveIntoGoalZone = true;
-            }
-            else if (brikP == new Point(14, 7) && color == "y")
-            {
-                mayMoveIntoGoalZone = true;
-            }
-            else if (brikP == new Point(7, 14) && color == "b")
-            {
-                mayMoveIntoGoalZone = true;
-            }
-            else if (brikP == new Point(0, 7) && color == "r")
-            {
-                mayMoveIntoGoalZone = true;
-            }
+        //    if (brikP == new Point(7, 0) && color == "g")
+        //    {
+        //        mayMoveIntoGoalZone = true;
+        //    }
+        //    else if (brikP == new Point(14, 7) && color == "y")
+        //    {
+        //        mayMoveIntoGoalZone = true;
+        //    }
+        //    else if (brikP == new Point(7, 14) && color == "b")
+        //    {
+        //        mayMoveIntoGoalZone = true;
+        //    }
+        //    else if (brikP == new Point(0, 7) && color == "r")
+        //    {
+        //        mayMoveIntoGoalZone = true;
+        //    }
 
-            return mayMoveIntoGoalZone;
-        }
+        //    return mayMoveIntoGoalZone;
+        //}
 
         public Point moveOut(string color)
         {
